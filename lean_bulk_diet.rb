@@ -1,8 +1,12 @@
-current = 64
-ideal = 59
+puts "今の体重を教えて？"
+current = gets.to_f
+puts "目標の体重を教えて？"
+ideal = gets.to_f
 percentage = 0.01
-height = 171
-age = 28
+puts "あなたの身長を教えて？"
+height = gets.to_f
+puts "あなたの年齢を教えて？"
+age = gets.to_i
 
 def calculate_calory(current, height, age)
     basal_metabolism = (13.4*current + 4.8*height - 5.68*age+88.4).round(1)
