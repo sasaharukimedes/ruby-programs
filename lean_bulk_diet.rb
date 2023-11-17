@@ -25,7 +25,9 @@ def calculate_pace(current, ideal, percentage, height, age)
         protein = (rounded_current * 2.5).round(1)
         fat = (calory / 4 / 9 ).round(1)
         carbon = ((calory - (protein * 4) - (fat * 9))/4).round(1)
+        puts "栄養素から逆算した目標カロリー: #{(protein*4+fat*9+carbon*4).round(1)}"
         puts "#{count} 週目  目標体重: #{rounded_current} kg, 目標カロリー: #{calory} kcal, タンパク質: #{protein} g, 脂質: #{fat} g, 炭水化物: #{carbon} g"
+        puts
         if current <=ideal
             month = count / 4
             weeks = count % 4
