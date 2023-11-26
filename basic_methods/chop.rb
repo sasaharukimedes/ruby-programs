@@ -1,0 +1,5 @@
+p "string\n".chop    # => "string"
+p "string\r\n".chop  # => "string"
+p "string".chop      # => "strin"
+p "strin".chop       # => "stri"
+p "".chop            # => ""
