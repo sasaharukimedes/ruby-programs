@@ -1,4 +1,4 @@
-case $age
+case age
 when 0 .. 2
   "baby"
 when 3 .. 6
