@@ -1,4 +1,5 @@
 #文字列を反転させる
+#非破壊的メソッドです
 
 str = "123456789"
 reversed_str = ""
@@ -11,3 +12,16 @@ end
 
 puts str
 puts reversed_str
+
+
+a = "Ruby"
+b = " on Rails"
+a.concat b
+a.reverse
+p a.index("R", 1)
+
+a = "Ruby"
+b = " on Rails"
+a.concat b
+a.reverse!
+p a.index("R", 1)
