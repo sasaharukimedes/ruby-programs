@@ -1,3 +1,5 @@
+#文字列の比較
+
 p("foo".eql?("bar")) #=> false
 p("foo".eql?("foo")) #=> true
 

@@ -6,12 +6,21 @@
 #   must_to_do
 # end
 
+# https://www.sejuku.net/blog/19513
+
 
 begin
-  raise "error message"
-rescue => evar
-  p $!
-  p evar
+  1/0
+rescue => e
+  puts e
+ensure
+  puts "ensure"
 end
-# => #<RuntimeError: error message>
-#    #<RuntimeError: error message>
+
+begin
+  1/1
+rescue => e
+  puts e
+ensure
+  puts "ensure"
+end

@@ -1,17 +1,15 @@
-array = [1, 2]
-a     = [3, 4]
-array.concat a
-p array          # => [1, 2, 3, 4]
-p a              # => [3, 4]       # こちらは変わらない
+#文字列や配列を結合する
+#引数は複数指定可能
+
+str1 = "Hello"
+str2 = "World"
+puts str1.concat(str2)
 
 
-[ "a", "b" ].concat( ["c", "d"] ) #=> [ "a", "b", "c", "d" ]
-[ "a" ].concat( ["b"], ["c", "d"] ) #=> [ "a", "b", "c", "d" ]
-[ "a" ].concat #=> [ "a" ]
+fruits1 = ["apple", "orange", "melon", "banana"]
+fruits2 = ["pineapple", "strawberry"]
 
-a = [ 1, 2, 3 ]
-a.concat( [ 4, 5 ] )
-a                                 #=> [ 1, 2, 3, 4, 5 ]
+puts fruits1.concat(fruits2)
 
-a = [ 1, 2 ]
-a.concat(a, a)                    #=> [1, 2, 1, 2, 1, 2]
+#配列に対して要素を1つ追加しようとして引数に文字列を指定しても「String into Array (TypeError)」のエラーが発生しますので注意しましょう。
+#配列に要素を一つ追加したいならpush

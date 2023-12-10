@@ -1,3 +1,6 @@
+#配列に追加する
+#文字列は違う
+
 array = [1, 2, 3]
 array.push 4
 array.push [5, 6]

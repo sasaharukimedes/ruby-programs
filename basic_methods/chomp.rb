@@ -1,3 +1,5 @@
+#文字列の末尾の改行コードのみ削除する。
+
 p "foo\n".chomp             # => "foo"
 p "foo\n".chomp("\n")       # => "foo"
 p "foo\r\n".chomp("\r\n")   # => "foo"
