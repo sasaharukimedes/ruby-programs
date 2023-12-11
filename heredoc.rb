@@ -31,17 +31,21 @@ puts <<milkman
 }
 milkman
 
+# ""に関しては、上の方だけつく！！
 puts <<"milkman"
 {
 	i want to drink #{drink}.
 }
 milkman
+
+
 puts <<-"milkman"
 {
 	i want to drink #{drink}.
 }
   milkman
 
+#これだけ式展開できない
 puts <<'milkman'
 {
 	i want to drink #{drink}.
