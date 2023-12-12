@@ -7,3 +7,13 @@
 3.times do
   p "Hello"
 end
+
+
+x = 0
+
+4.times do |i|
+  x += i
+end
+
+p x
+#この場合、0から始まる

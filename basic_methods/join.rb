@@ -5,3 +5,6 @@ puts array.join
 
 array2 = ["GSE", "VSE", "MSE"]
 puts array2.join(",")
+
+p [1,2,3] * ","
+これでも行ける

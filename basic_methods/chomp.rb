@@ -15,3 +15,9 @@ p "string\n".chomp(nil)  # => "string\n"
 p "foo\r\n\n".chomp("")  # => "foo"
 p "foo\n\r\n".chomp("")  # => "foo"
 p "foo\n\r\r".chomp("")  # => "foo\n\r\r"
+
+
+str = "Liberty Fish   \r\n"
+str.chomp
+p str
+#破壊的メソッドではない

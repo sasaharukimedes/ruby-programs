@@ -9,3 +9,8 @@
 
 " abc def  g ".split(' ')
 # => ["abc", "def", "g"]
+
+# ()を使うとそれを含んだ結果を返す
+p "Spring,Summer,Autumn,Winter".split(/(,)/)
+
+# ["Spring", ",", "Summer", ",", "Autumn", ",", "Winter"]とカンマを含めて分解されます。

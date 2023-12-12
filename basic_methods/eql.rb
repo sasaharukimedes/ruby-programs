@@ -16,4 +16,6 @@ puts x.eql? y
 puts x.equal? y
 puts x.equal?(1)
 
-# == は eqiと同じ
+# - ==　値が同じであればtrue。1 == 1.0もtrueになる。
+# - eql?　値とクラスが同じであればtrue。1.eql?(1.0)はfalseになる。
+# - equal?　object_idが同じであればtrue。

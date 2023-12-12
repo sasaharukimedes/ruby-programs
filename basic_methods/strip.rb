@@ -3,3 +3,9 @@
 str = " Hello World "
 stripStr = str.strip
 #=> "Hello World"
+
+
+str = "Liberty Fish   \r\n"
+str.strip
+p str
+#破壊的メソッドじゃないので変わらない！！
