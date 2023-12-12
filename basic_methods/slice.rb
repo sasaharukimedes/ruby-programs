@@ -8,3 +8,6 @@ puts str
 
 puts str.slice!(1)
 puts str
+
+a = [1,2,3,4]
+p a.slice(2,1)
