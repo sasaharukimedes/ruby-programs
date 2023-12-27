@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h, w = gets.split.map(&:to_i)
 
 arr = []
@@ -30,3 +31,11 @@ count = 0
 end
 
 puts count
+=======
+a = [1, 2, 3, 5, 8]
+b = [1, 3, 6, 7, 8]
+c = false || true ? true && false ? a | b : a & b : b ;
+p c
+
+
+>>>>>>> 7c21ec32b61d231e216695d60f9487e30ff3cd5e
