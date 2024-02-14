@@ -10,3 +10,13 @@ puts str2.chr
 # A
 # A
 # a
+
+abc = gets.split.map(&:to_i)
+
+def number_to_alphabet(abc)
+  abc.map do |n|
+    (n + 64).chr
+  end
+end
+
+p number_to_alphabet(abc)
