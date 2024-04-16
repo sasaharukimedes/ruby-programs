@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 # pushメソッドは配列の末尾に要素を追加したいときに使用します。
 
 # 配列を定義
-fruits = ["apple", "orange", "melon", "banana"]
+fruits = %w[apple orange melon banana]
 # 配列の要素を末尾に追加
-fruits.push("strawberry", "pineapple")
+fruits.push('strawberry', 'pineapple')
 
 p fruits
 
 # 配列を定義
-fruits1 = ["apple", "orange", "melon", "banana"]
-fruits2 = ["strawberry", "pineapple"]
+fruits1 = %w[apple orange melon banana]
+fruits2 = %w[strawberry pineapple]
 # 配列を末尾に追加
 fruits1.push(fruits2)
 p fruits1

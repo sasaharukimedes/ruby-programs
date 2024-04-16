@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 # 引数で与えられた文字列をコンソールに出力するメソッドです。
 
 # さらに、フォーマットを指定して数値を左寄せ・右寄せしたり、指定した桁数まで数値に「０」を埋める、いわゆるゼロ埋めをしたりできます。
 
 # https://style.potepan.com/articles/29652.html
 # https://qiita.com/takuyanin/items/3b210f166f24c6d13e5a
-
 
 # 指示子	意味
 # %c	引数の数値を文字コードとみなして対応する文字を出力

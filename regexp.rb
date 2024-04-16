@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # 正規表現 =~ 文字列
 # マッチングした場合はマッチングした文字が何文字目かを、
 # マッチングしない場合はnilを返す。
@@ -23,21 +25,20 @@
 # | どれかに当てはまる ex) /^(ABC|DEF)$/ =~ "DEF"
 
 # $数字  で正規表現内の()で囲まれた部分を取り出せる
-/(.)(.)(.)/ =~ "ABC"
-p $1 #=> "A"
-p $2 #=> "B"
-p $3 #=> "C"
+/(.)(.)(.)/ =~ 'ABC'
+p Regexp.last_match(1) #=> "A"
+p Regexp.last_match(2) #=> "B"
+p Regexp.last_match(3) #=> "C"
 
 # (?:)でまとめられた部分はキャプチャ対象外
-/(.)(?:\d\d)+(.)/ =~ "123456"
-p $1 #=> "1"
-p $2 #=> "6"
+/(.)(?:\d\d)+(.)/ =~ '123456'
+p Regexp.last_match(1) #=> "1"
+p Regexp.last_match(2) #=> "6"
 
 # $` マッチした部分より前の文字列
 # $& マッチした部分
 # &' マッチした部分より後ろの文字列
-/C./ =~ "ABCDE"
-p $` #=> "AB"
-p $& #=> "CD"
-p $` #=> "E"
-
+/C./ =~ 'ABCDE'
+p Regexp.last_match.pre_match #=> "AB"
+p Regexp.last_match(0) #=> "CD"
+p Regexp.last_match.pre_match #=> "E"

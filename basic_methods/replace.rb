@@ -1,10 +1,12 @@
-#文字列を書き換える
-str = "foo"
-str.replace "bar"
+# frozen_string_literal: true
+
+# 文字列を書き換える
+str = 'foo'
+str.replace 'bar'
 p str
 
-hash = {a: 1, b: 3, c: 4}
+hash = { a: 1, b: 3, c: 4 }
 p hash
-hash.replace({a: 10})
+hash.replace({ a: 10 })
 p hash
-#hashは全体置換
+# hashは全体置換

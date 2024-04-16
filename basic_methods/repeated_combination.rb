@@ -1,4 +1,5 @@
-#組み合わせ（順序なし、重複を許す）
+# frozen_string_literal: true
 
-puts [1,2,3].repeated_combination(2).to_a
+# 組み合わせ（順序なし、重複を許す）
 
+puts [1, 2, 3].repeated_combination(2).to_a

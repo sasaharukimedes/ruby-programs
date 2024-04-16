@@ -1,4 +1,6 @@
-#配列の末尾から1要素を取り除き返します。
+# frozen_string_literal: true
+
+# 配列の末尾から1要素を取り除き返します。
 
 p array = [1, 2, 3]
 p array.pop

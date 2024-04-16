@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User
   attr_accessor :name, :email
 
@@ -15,7 +17,7 @@ example = User.new
 p example.name
 p example.email
 
-example.name= "Yuji"
-example.email = "itadori.co.jp"
+example.name = 'Yuji'
+example.email = 'itadori.co.jp'
 
 p example.formatted_email

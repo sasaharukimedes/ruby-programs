@@ -1,11 +1,10 @@
-
-
+# frozen_string_literal: true
 
 def hoge(step = 1)
   current = 0
-  Proc.new {
+  proc do
     current += step
-  }
+  end
 end
 
 p1 = hoge
@@ -20,4 +19,3 @@ p2.call
 p p2.call
 # p1とp2は別のProcオブジェクトのため、hogeメソッド内のcurrent変数は共有されません。
 # よって、p2の結果は6になります。
-

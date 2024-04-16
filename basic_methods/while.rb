@@ -1,5 +1,5 @@
+# frozen_string_literal: true
+
 num = 0
-while num < 2 do
-  puts("num = " + num.to_s)
-end
-puts("End")
+puts("num = #{num}") while num < 2
+puts('End')

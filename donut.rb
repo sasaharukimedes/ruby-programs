@@ -1,4 +1,6 @@
-h, w = gets.split.map(&:to_i)
+# frozen_string_literal: true
+
+h, = gets.split.map(&:to_i)
 
 arr = []
 h.times do
@@ -6,9 +8,9 @@ h.times do
 end
 
 pattern = [
-  "###",
-  "#.#",
-  "###"
+  '###',
+  '#.#',
+  '###'
 ]
 
 height = pattern.size
@@ -20,7 +22,7 @@ count = 0
   (arr[0].size - width + 1).times do |j|
     match = true
     height.times do |k|
-      if arr[i+k][j, width] != pattern[k]
+      if arr[i + k][j, width] != pattern[k]
         match = false
         break
       end

@@ -1,1 +1,3 @@
-p IO.read("text.txt", 3, offset = 8)
+# frozen_string_literal: true
+
+p IO.read('text.txt', 3, 8)

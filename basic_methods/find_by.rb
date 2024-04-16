@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 # モデル.find_by(条件..)
 
 # # 失敗したら例外発生
 # モデル.find_by!(条件..)
-
 
 # category_idが1の最初の値を取得
 Page.find_by category_id: 1

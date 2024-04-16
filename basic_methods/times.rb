@@ -1,13 +1,14 @@
-#回数指定の繰り返し文
+# frozen_string_literal: true
 
-5.times{|num|
-  puts("#{num}回目のHELLOn");
-}
+# 回数指定の繰り返し文
 
-3.times do
-  p "Hello"
+5.times do |num|
+  puts("#{num}回目のHELLOn")
 end
 
+3.times do
+  p 'Hello'
+end
 
 x = 0
 
@@ -16,4 +17,4 @@ x = 0
 end
 
 p x
-#この場合、0から始まる
+# この場合、0から始まる

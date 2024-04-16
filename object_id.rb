@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # 例外として下記クラスのインスタンスは、同じリテラルであれば同一のオブジェクトとなるためオブジェクトIDは同じです。
 
 # 同一リテラルは同一オブジェクトとみなされるクラス
@@ -15,7 +17,6 @@
 # :a.equal?(:a)       # => true
 # 1.equal?(1)         # => true
 # 3.14.equal? 3.14    # => true
-
 
 arr = [
   true.equal?(true),

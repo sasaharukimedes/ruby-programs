@@ -1,9 +1,11 @@
-array = [1,2,3,4,5]
+# frozen_string_literal: true
 
-for i in array do
+array = [1, 2, 3, 4, 5]
+
+array.each do |i|
   puts i
 end
 
-for i in 1..5 do
+(1..5).each do |i|
   puts i
 end

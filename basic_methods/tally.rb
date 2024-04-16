@@ -1,9 +1,11 @@
-#配列内の要素がいくつあるか数えてくれる
+# frozen_string_literal: true
 
-["a", "b", "c", "b"].tally  #=> {"a"=>1, "b"=>2, "c"=>1}
+# 配列内の要素がいくつあるか数えてくれる
+
+%w[a b c b].tally #=> {"a"=>1, "b"=>2, "c"=>1}
 
 h = {}
-[:a, :b, :c].tally(h)
-[:a, :b, :d].tally(h)
+%i[a b c].tally(h)
+%i[a b d].tally(h)
 
 p h # => {:a=>2, :b=>2, :c=>1, :d=>1}

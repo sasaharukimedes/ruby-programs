@@ -1,12 +1,13 @@
-#文字列の比較
+# frozen_string_literal: true
 
-p("foo".eql?("bar")) #=> false
-p("foo".eql?("foo")) #=> true
+# 文字列の比較
+
+p('foo'.eql?('bar')) #=> false
+p('foo'.eql?('foo')) #=> true
 
 p(4.eql?(4)) #=> true
 p(4.eql?(4.0)) #=> false
 puts
-
 
 x = 1
 y = 1.0
