@@ -29,15 +29,16 @@ n = gets.to_i
   gap = cost_2 - cost_1
   if gap.positive?
     puts "#{iteration}回目: 1件目=#{cost_1.to_s.reverse.gsub(/(\d{3})(?=\d)/,
-                                                             '\\1,').reverse}, 2件目=#{cost_2.to_s.reverse.gsub(/(\d{3})(?=\d)/,
-                                                                                                                '\\1,').reverse}, 2件目が1件目より#{gap.to_s.reverse.gsub(
-                                                                                                                  /(\d{3})(?=\d)/, '\\1,'
-                                                                                                                ).reverse}円多い"
+                                                             '\\1,').reverse}, 2件目=#{cost_2.to_s.reverse.gsub(
+                                                               /(\d{3})(?=\d)/, '\\1,'
+                                                             ).reverse},
+    2件目が1件目より#{gap.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse}円多い"
   else
     puts "#{iteration}回目: 1件目=#{cost_1.to_s.reverse.gsub(/(\d{3})(?=\d)/,
-                                                             '\\1,').reverse}, 2件目=#{cost_2.to_s.reverse.gsub(/(\d{3})(?=\d)/,
-                                                                                                                '\\1,').reverse}, 1件目が2件目より#{(-gap).to_s.reverse.gsub(
-                                                                                                                  /(\d{3})(?=\d)/, '\\1,'
-                                                                                                                ).reverse}円多い"
+                                                             '\\1,').reverse}, 2件目=#{cost_2.to_s.reverse.gsub(
+                                                               /(\d{3})(?=\d)/, '\\1,'
+                                                             ).reverse},
+    1件目が2件目より#{(-gap).to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse}円多い"
   end
+  puts
 end

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-current = 65.8
+current = 69
 ideal = 60
 percentage = 0.01
 
