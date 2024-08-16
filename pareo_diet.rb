@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-current = 69
+current = 68
 ideal = 60
-percentage = 0.01
+percentage = 0.02
 
 def calculate(current, ideal, percentage)
   x = current
@@ -16,6 +16,7 @@ def calculate(current, ideal, percentage)
     fat = (calory * 0.3 / 9).round(1)
     carbon = ((calory - (protein * 4) - (fat * 9)) / 4).round(1)
     puts "#{count} 週目  目標体重: #{rounded_x} kg, 目標カロリー: #{calory} kcal, タンパク質: #{protein} g, 脂質: #{fat} g, 炭水化物: #{carbon} g"
+    puts
     next unless x <= ideal
 
     month = count / 4

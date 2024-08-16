@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
-puts '今の体重を教えて？'
-current = gets.to_f
-puts '目標の体重を教えて？'
-ideal = gets.to_f
-percentage = 0.01
-puts 'あなたの身長を教えて？'
-height = gets.to_f
-puts 'あなたの年齢を教えて？'
-age = gets.to_i
+current = 68
+
+ideal = 60
+percentage = 0.02
+
+height = 171.3
+
+age = 29
 
 def calculate_calory(current, height, age)
   basal_metabolism = (13.4 * current + 4.8 * height - 5.68 * age + 88.4).round(1)
